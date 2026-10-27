@@ -1,19 +1,17 @@
 ## Installation
 ```shell
 export JIRA_API_TOKEN=NT...
+export JIRA_EDITOR=vim
+
 make install   # to $GOPATH/bin
 ```
 
 
+Fork https://github.com/ankitpokhrel/jira-cli/fork
+
 ```sh
 docker run -it --rm ghcr.io/ankitpokhrel/jira-cli:latest
 ```
-
-Follow the [installation guide](https://github.com/ankitpokhrel/jira-cli/wiki/Installation) for other installation methods like `Homebrew`, `Nix`, etc.
-
-<a href="https://repology.org/project/jira-cli-go/versions">
-    <img src="https://repology.org/badge/vertical-allrepos/jira-cli-go.svg" alt="Packaging status">
-</a>
 
 ## Getting started
 
