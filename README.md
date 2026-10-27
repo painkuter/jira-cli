@@ -1,75 +1,9 @@
-<div align="center">
-    <h1 align="center">JiraCLI</h1>
-</div>
-
-<div>
-    <p align="center">
-        <a href="https://github.com/ankitpokhrel/jira-cli/actions?query=workflow%3Abuild+branch%3Amain">
-            <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/ankitpokhrel/jira-cli/ci.yml?branch=main&style=flat-square" />
-        </a>
-        <a href="https://github.com/ankitpokhrel/jira-cli/blob/main/LICENSE">
-            <img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" />
-        </a>
-        <a href="#">
-            <img alt="Downloads" src="https://img.shields.io/github/downloads/ankitpokhrel/jira-cli/total?style=flat-square" />
-        </a>
-        <a href="https://opencollective.com/jira-cli#backers">
-            <img alt="Financial Contributors" src="https://img.shields.io/opencollective/backers/jira-cli?style=flat-square" />
-        </a>
-    </p>
-    <p align="center">
-        <i>Feature-rich Interactive Jira Command Line</i>
-    </p>
-    <img align="center" alt="JiraCLI Demo" src=".github/assets/demo.gif" /><br/><br/>
-    <p align="center">
-         <sub>
-            Financial support from private and corporate sponsors ensures the tool's continued development.<br/>
-            Please <a href="https://opencollective.com/jira-cli#backers">consider sponsoring the project</a> if you or your company rely on JiraCLI.
-         </sub><br/><br/>
-        <a href="https://opencollective.com/jira-cli#backers" target="_blank">
-            <img src="https://opencollective.com/jira-cli/backers.svg" alt="jira-cli open collective badge">
-        </a>
-    </p>
-</div>
-
-<div>
-   <h2 align="center">Supporters</h2>
-   <p align="center">
-      <a href="https://www.atlassian.com?from=ankitpokhrel/jira-cli" target="_blank">
-         <img alt="Atlassian Logo" src=".github/assets/supporters/atlassian.png" />
-      </a><br/>
-      <a href="https://www.jetbrains.com/?from=ankitpokhrel/jira-cli" target="_blank">
-         <img alt="JetBrains Logo" src=".github/assets/supporters/jetbrains.png" />
-      </a>
-   </p>
-</div>
-
-JiraCLI is an interactive command line tool for Atlassian Jira that will help you avoid using the Jira UI to some extent. This
-tool may not be able to do everything, but it has all the essential features required to improve your day-to-day workflow with Jira.
-
-The tool started with the idea of making issue search and navigation as straightforward as possible. However, with the
-help of [outstanding supporters like you](#support-the-project), we evolved, and the tool now includes all necessary
-features like issue creation, cloning, linking, ticket transition, and much more.
-
-> This tool is heavily inspired by the [GitHub CLI](https://github.com/cli/cli)
-
-## Supported platforms
-> [!NOTE]
-> Some features might work slightly differently in Jira Cloud versus on-premises installations due to the
-nature of the data. Yet, we've attempted to make the experience as similar as possible.
-
-| Platform | <a href="#"><img alt="Linux" src="https://img.shields.io/badge/Linux-%E2%9C%93-dark--green?logo=linux&logoColor=white&style=flat-square" /></a><a href="#"><img alt="macOS" src="https://img.shields.io/badge/macOS-%E2%9C%93-dark--green?logo=apple&style=flat-square" /></a><a href="#"><img alt="FreeBSD" src="https://img.shields.io/badge/FreeBSD-%E2%9C%93-dark--green?logo=freebsd&style=flat-square" /></a><a href="#"><img alt="NetBSD" src="https://img.shields.io/badge/NetBSD-%E2%9C%93-dark--green?logo=netbsd&logoColor=white&style=flat-square" /></a><a href="#"><img alt="Windows" src="https://img.shields.io/badge/Windows-partial-yellow?logo=windows&style=flat-square" /></a> |
-| :------------- | :----------: |
-| **Jira**  | <a href="#"><img alt="Jira Cloud" src="https://img.shields.io/badge/Jira Cloud-%E2%9C%93-dark--green?logo=jira&style=flat-square" /></a><a href="#"><img alt="Jira Server" src="https://img.shields.io/badge/Jira Server-%E2%9C%93-dark--green?logo=jira&style=flat-square" /></a> |
-
-<sub><a href="./skills/jira-cli/SKILL.md">SKILL.md</a> ← for agents</sub>
-
-JiraCLI works well with LLM-powered CLI tools like Claude Code, Codex, OpenCode, as well as shell-based automation.
-
 ## Installation
-`jira-cli` is available as a downloadable packaged binary for Linux, macOS, and Windows from the [releases page](https://github.com/ankitpokhrel/jira-cli/releases).
+```shell
+export JIRA_API_TOKEN=NT...
+make install   # to $GOPATH/bin
+```
 
-You can use Docker to quickly try out `jira-cli`.
 
 ```sh
 docker run -it --rm ghcr.io/ankitpokhrel/jira-cli:latest

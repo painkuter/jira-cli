@@ -184,6 +184,18 @@ func (cc *createCmd) setIssueTypes() error {
 			Subtask: tp["subtask"].(bool),
 		})
 	}
+	// Always show "Task" as the first option in the issue type selector.
+	for i, t := range issueTypes {
+		if t.Name == jira.IssueTypeTask {
+			if i > 0 {
+				task := issueTypes[i]
+				copy(issueTypes[1:i+1], issueTypes[0:i])
+				issueTypes[0] = task
+			}
+			break
+		}
+	}
+
 	cc.issueTypes = issueTypes
 
 	return nil

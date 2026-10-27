@@ -18,6 +18,8 @@ import (
 const (
 	// IssueTypeEpic is an epic issue type.
 	IssueTypeEpic = "Epic"
+	// IssueTypeTask is a task issue type.
+	IssueTypeTask = "Task"
 	// IssueTypeSubTask is a sub-task issue type.
 	IssueTypeSubTask = "Sub-task"
 	// AssigneeNone is an empty assignee.

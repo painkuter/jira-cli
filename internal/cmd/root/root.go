@@ -82,8 +82,8 @@ func NewCmdRoot() *cobra.Command {
 				return
 			}
 
-			// mTLS and cf_access don't need Jira API Token.
-			if viper.GetString("auth_type") != string(jira.AuthTypeMTLS) && viper.GetString("auth_type") != string(jira.AuthTypeCFAccess) {
+			// mTLS don't need Jira API Token.
+			if viper.GetString("auth_type") != string(jira.AuthTypeMTLS) {
 				checkForJiraToken(viper.GetString("server"), viper.GetString("login"))
 			}
 
